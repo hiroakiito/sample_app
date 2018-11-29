@@ -17,7 +17,7 @@
     </div>
   </div>
 <% else %>
-  <div class="center jumbotron">
+  
     <h1>ようこそ、つぶやく( ˙-˙ )へ</h1>
 
     <h2>これはあなたの日常や気持ちをリアルタイムでつぶやくSNSです</h2>
@@ -26,8 +26,8 @@
     
 
     <%= link_to "新規登録", signup_path, class: "btn btn-lg btn-primary" %>
-  </div>
+  
 
-  <%= link_to image_tag("22353.jpg", alt: "Rails logo"),
+  <%= link_to image_tag("uyuni.jpg", alt: "Rails logo", class: "top-img"),
               'http://rubyonrails.org/' %>
 <% end %>
