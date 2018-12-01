@@ -17,17 +17,36 @@
     </div>
   </div>
 <% else %>
-  
-    <h1>ようこそ、つぶやく( ˙-˙ )へ</h1>
-
-    <h2>これはあなたの日常や気持ちをリアルタイムでつぶやくSNSです</h2>
-    <h3>さっそく登録してはじめてみましょう</h3>
+  <div class="home-bg">
+    <div class="row">
+      <div class="col-md-4 top-col head-t">
+        <p>「つぶやく」は日常のちょっとしたことを友達と共有して楽しむアプリケーションです。<br class="d-none d-md-block">
+        <br class="d-none d-md-block">
+        画像と短文を投稿して遊んでみましょう</p>
+        <%= link_to "さっそく使う", signup_path, class: "btn btn-home" %>
+      </div>
+      <div class="col-md-8 top-col">
+        <%= link_to image_tag("inu.jpg", alt: "", class: "top-img") %>
+      </div>
+      <div class="col-md-4 top-col head-t">
+        食べ物の画像を共有するのもアリ
+      </div>
+      <div class="col-md-8 top-col">
+        <%= link_to image_tag("cake.jpg", alt: "", class: "top-img") %>
+      </div>
+      <div class="col-md-4 top-col head-t">
+        メディアに報道されないようなローカルスポーツの速報にも使えます。
+      </div>
+      <div class="col-md-8 top-col">
+        <%= link_to image_tag("shioko.jpg", alt: "", class: "top-img") %>
+      </div>
+    </div>
     
-    
-
-    <%= link_to "新規登録", signup_path, class: "btn btn-lg btn-primary" %>
-  
-
-  <%= link_to image_tag("uyuni.jpg", alt: "Rails logo", class: "top-img"),
-              'http://rubyonrails.org/' %>
 <% end %>
+  </div>
+  
+
+  <%#= link_to image_tag("uyuni.jpg", alt: "Rails logo", class: "top-img"),
+              #'http://rubyonrails.org/' %>
+
+    

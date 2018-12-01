@@ -1,6 +1,8 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<header class="navbar navbar-fixed-top navbar-default">
   <div class="container">
-    <%= link_to "つぶやく( ˙-˙ )", root_path, id: "logo" %>
+    <%#= link_to "つぶやく", root_path, id: "logo" %>
+    <%= link_to image_tag("itousan.jpg", alt: "Rails logo", class: "header-img", id: "logo"), root_path %>
+    <%= link_to "つぶやく", root_path, id: "logo" %>
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "HOME", root_path %></li>
